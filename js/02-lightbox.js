@@ -1,7 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-// console.log(galleryItems);
+console.log(galleryItems);
 
 function createGalleryMarkUp(galleryItems) {
   return galleryItems
@@ -14,6 +14,8 @@ function createGalleryMarkUp(galleryItems) {
     })
     .join('');
 }
+
+console.log(createGalleryMarkUp(galleryItems));
 
 const galleryEl = document.querySelector('.gallery');
 
