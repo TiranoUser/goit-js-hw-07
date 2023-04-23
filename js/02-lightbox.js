@@ -19,16 +19,10 @@ const galleryEl = document.querySelector('.gallery');
 
 galleryEl.insertAdjacentHTML('beforeend', createGalleryMarkUp(galleryItems));
 
-galleryEl.addEventListener('click', modalShow);
-
-function modalShow(event) {
-  event.preventDefault();
-
-  new SimpleLightbox('.gallery a', {
-    /* options */
-    opacity: 0.65,
-    navText: ['◀', '▶'],
-    captionsData: 'alt',
-    captionDelay: 250,
-  });
-}
+let simple = new SimpleLightbox('.gallery a', {
+  /* options */
+  opacity: 0.65,
+  navText: ['◀', '▶'],
+  captionsData: 'alt',
+  captionDelay: 250,
+});
